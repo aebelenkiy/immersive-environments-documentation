@@ -1,0 +1,37 @@
+h2 {
+    color: #b45f06;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #b45f06;
+    text-transform: uppercase;
+}
+
+h4 {
+    color: #f6b26b;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-style: italic;
+}
+
+.emphasized {
+    font-style: italic;
+}
+
+.modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.modal-body {
+position:relative;
+padding:0px;
+}
+.btn-close {
+position:absolute;
+right:-30px;
+top:0;
+}

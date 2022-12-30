@@ -1,0 +1,783 @@
+<html>
+  <head>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rigging Protocol - Immersive Environments</title>
+  </head>
+
+  <body>
+    <script src="youtube-modal.js"></script>
+
+
+    <nav class="navbar navbar-expand-md bg-light navbar-light">
+      <div class="container">
+        <a href="#" class="navbar-brand"
+          >Immersive Environments
+          <!-- <img src="images/Dodecahedron+no+background.png" class="img-fluid " alt="IE Logo"> -->
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="health-safety-manual.html" class="nav-link">Health and Safety</a>
+            </li>
+            <li class="nav-item">
+              <a href="infection-control-protocol.html" class="nav-link">Infection Control</a>
+            </li>
+            <li class="nav-item">
+              <a href="rigging-protocol.html" class="nav-link">Rigging</a>
+            </li>
+            <li class="nav-item">
+                <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+              </li>
+              <li class="nav-item">
+                <a href="covid-policy.html" class="nav-link">COVID-19</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-4">
+        <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link" href="#factors-of-safety">Factors of Safety</a>
+            <a class="nav-link" href="#roles-and-responsibilities">Roles and Responsibilities</a>
+            <a class="nav-link" href="#setting-up-ladder">Setting Up a Ladder</a>
+            <a class="nav-link" href="#connecting-load-path">Connecting the Load Path</a>
+            <a class="nav-link" href="#connecting-load-path-aerial">Connecting the Load Path - Aerial Venue</a>
+            <a class="nav-link" href="#connecting-load-path-gravlocks">Connecting the Load Path - Gravlocks</a>
+            <a class="nav-link" href="#cord-use">Cord Use</a>
+            <a class="nav-link" href="#terminations">Terminations</a>
+            <a class="nav-link" href="#hardware-selection">Hardware Selection and Use</a>
+            <a class="nav-link" href="#belay-ascent-descent">Belay - Ascent / Descent</a>
+            <a class="nav-link" href="#mainline">Mainline</a>
+            <a class="nav-link" href="#gear-inspection">Gear Inspection</a>
+            <a class="nav-link" href="#general-rigging-guidelines">General Rigging Guidelines</a>
+            <a class="nav-link" href="#sources-credits">Sources / Credits</a>
+          </nav>
+        </nav>
+      </div>
+
+      <div class="col-8">
+        <div
+          data-bs-spy="scroll"
+          data-bs-target="#navbar-example3"
+          data-bs-smooth-scroll="true"
+          class="scrollspy-example-2"
+          tabindex="0">
+          <div>
+            <h2>Rigging Protocol</h2>
+          </div>
+          <div id="factors-of-safety">
+            <h3>Factors of Safety</h3>
+            <ol>
+              <li>
+                <p>
+                  <strong>MINIMUM BREAKING STRENGTH (MBS)</strong> is determined by 3-sigma testing,
+                  also known as the three-sigma rule. Three-sigma is a statistical tool used to
+                  calculate probability. Minimum break strength is very different from average break
+                  strength (abs), although abs is used in the calculation of mbs. The three-sigma
+                  value is determined by calculating the standard deviation (a complex and tedious
+                  calculation on its own) of a series of five breaks. Then multiply that value by
+                  three (hence three-sigma) and finally subtract that product from the average of
+                  the entire series. It is 99.73% probable any additional breaks will be at or above
+                  this final value.
+                </p>
+                <p>The three-sigma process:</p>
+                <ol>
+                  <li>Carry out at least 5 breaks of the item to be rated</li>
+                  <li>Calculate the mean</li>
+                  <li>Calculate the standard deviation</li>
+                  <li>Multiply the standard deviation by 3</li>
+                  <li>Subtract the product in step 4 from the mean</li>
+                </ol>
+              </li>
+              <li>
+                <strong>FACTOR OF SAFETY</strong> is the ratio between the designated working load
+                limit (WLL) or safe working load (SWL) and the load the equipment is expected to
+                fail at. Below are examples and different terminologies.
+              </li>
+              <li>
+                <strong>DESIGN FACTOR (DF)</strong> is specified by a designer or manufacturer and
+                this defines the factor applied to the minimum breaking strength (MBS) to determine
+                the maximum load acceptable for a component.
+              </li>
+              <li>
+                <strong>WORKING LOAD LIMIT (WLL)</strong> is a term used by manufacturers to
+                indicate the maximum force that should be applied to a component in normal use,
+                regardless of industry. The ratio of MBS to WLL is referred to as the DF. Many
+                manufacturers specify a df of 4, which implies a WLL of 25% of the mbs.
+                Manufacturers state the WLL to ensure the item is not subjected to significant
+                fatigue and remains in the range of normal elastic deformation.
+              </li>
+              <li>
+                <strong>SAFETY FACTOR (SF)</strong> or “factor of safety” is generally defined by
+                industry rather than manufacturer. It may be significantly different to a
+                manufacturer’s df. For example, a particular connector may have a mbs of 50kn, a
+                manufacturer specified a DF of 4, but an industry specified SF of 12 when used for a
+                particular application.
+              </li>
+              <li>
+                <strong>SAFE WORKING LOAD (SWL)</strong> is typically determined by dividing the MBS
+                of a component by the SF required for a particular use. As stated above, it’s
+                possible that an entertainment rigger may calculate a different SWL for a particular
+                use of an item than the value determined by a rescue technician. The SWL should only
+                be determined by a competent rigger.
+              </li>
+            </ol>
+            <!-- <p>
+              <strong>EXAMPLE:</strong> a particular steel connector has a MBS of 50kn. The
+              manufacturer has specified a DF of 4 for this connector, regardless of use. This
+              connector has a WLL of 12.5kn and this value should never be exceeded in normal use -
+              regardless of industry and application. If this value is exceeded, it should not fail
+              below the mbs however it should then be removed from service and destroyed.
+            </p>
+            <p>
+              An entertainment rigger rigging in a certain country is required by the industry
+              code-of-practice of that country to use a SF of 10 for flying performers, and thus
+              determines the SWL of this connector is (50kn / 10) 5kn.
+            </p>
+            <p>
+              A rescue technician in another country is supposed to apply a SF of 5 to hardware and
+              thus determines a swl of (50kn / 5) 10kn for an identical connector.
+            </p> -->
+
+            <div class="card text-bg-light mb-3" style="max-width: 40rem">
+              <div class="card-header"><strong>EXAMPLE</strong></div>
+              <div class="card-body">
+                <p class="card-text">
+                  A particular steel connector has a MBS of 50kn. The
+                  manufacturer has specified a DF of 4 for this connector, regardless of use. This
+                  connector has a WLL of 12.5kn and this value should never be exceeded in normal use -
+                  regardless of industry and application. If this value is exceeded, it should not fail
+                  below the mbs however it should then be removed from service and destroyed.
+                </p>
+                <p class="card-text">
+                  An entertainment rigger rigging in a certain country is required by the industry
+                  code-of-practice of that country to use a SF of 10 for flying performers, and thus
+                  determines the SWL of this connector is (50kn / 10) 5kn.
+                </p>
+                <p class="card-text">
+                  80 kg (weight of person) / 4 hooks = 20 kg per hook / 2 lines (per hook) = 10 kg
+                  per working line (this means a cord with a minimum of 10 kg swl per line is
+                  required).
+                </p>
+                <p class="card-text">
+                  A rescue technician in another country is supposed to apply a SF of 5 to hardware and
+                  thus determines a swl of (50kn / 5) 10kn for an identical connector.
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div id="roles-and-responsibilities">
+            <h3>Roles and Responsibilities</h3>
+            <ol>
+              <li>
+                <strong>HEAD RIGGER:</strong> responsible for the overall rigging of the suspension
+                event - all rigging is to be checked off by the head rigger prior to any suspension
+                commencing. Any and all matters pertaining to rigging can be brought to the head
+                rigger.
+              </li>
+              <li>
+                <strong>TOP RIGGER:</strong> responsible for the rigging of the hard point of the
+                suspension and attaching all equipment of the load path from the ceiling to the
+                bottom block.
+              </li>
+              <li>
+                <strong>GROUND RIGGER:</strong> responsible for spotting the top rigger on the
+                ladder and must remain at the bottom as a support until the top rigger has concluded
+                their work and is safely back on the ground. They are also responsible for
+                identifying any hazards that may be present under and around the area to be rigged.
+              </li>
+              <li>
+                <strong>GENERAL RIGGER:</strong> responsible for the general checking and oversight
+                of any rigging in place, being vigilant to ensure the safety of everyone involved
+                with the suspension(s).
+              </li>
+            </ol>
+            <p>
+              It is the responsibility of all riggers to each have safety shears and a butane torch
+              on their person in case of emergency. An LED torch should also be made available for
+              checking of overhead rigging and/or hook shifting.
+            </p>
+          </div>
+          <div id="setting-up-ladder">
+            <h3>Setting Up a Ladder</h3>
+            <ol>
+              <li>
+                Secure the ladder at the top and the bottom to prevent it from slipping sideways or
+                outwards.
+              </li>
+              <li>You must wear a climbing helmet at all times when working at height.</li>
+              <li>
+                Don’t overload yourself with equipment, anything being taken up must not exceed the
+                safe working load of the ladder (150kgs).
+              </li>
+              <li>Don’t overreach, stop at the third step from the top of the ladder.</li>
+              <li>Do not rest anything on the rungs.</li>
+              <li>Attach any tools/items to a harness or toolbelt.</li>
+              <li>Keep three points of contact on the ladder at all time</li>
+              <li>For every 4m the ladder is extended, it is to come out 1m (4:1 ratio).</li>
+            </ol>
+          </div>
+          <div id="connecting-load-path">
+            <h3>Connecting the Load Path</h3>
+            <ol>
+              <li>
+                Once the ladder is carefully secured against the steel beam, the top rigger is to
+                climb the ladder with a protective layer (carpet) and round sling, while the bottom
+                rigger secures the ladder.
+              </li>
+              <li>
+                The top rigger sets up a protective layer (carpet) over the beam checking first for
+                any potential rough areas or abnormalities - specifically burrs or sharp edges,
+                anything that may compromise the hardware. This layer can be taped down if needed.
+              </li>
+              <li>
+                A round sling is then wrapped around the beam by the top rigger over the protective
+                layer using a girth hitch. ensure this is secure.
+              </li>
+              <li>
+                The top rigger returns to the floor, collects remaining hardware (delta rapide,
+                reeved pulley system) and climbs the ladder with the additional gear, while the
+                bottom rigger securs the ladder.
+              </li>
+              <li>
+                The top rigger attaches delta to the round sling then attaches the pulley system to
+                the delta. ensure there is no tension on the delta when threading the gate closed
+                (remember to thread down).
+              </li>
+              <li>
+                Once all hardware is attached, have a competent rigger double check all the
+                attachment points in the load path and attach a green tag.
+              </li>
+              <li>
+                It is the responsibility of the head rigger to ensure the load path is set up
+                correctly. This checklist includes - but is not limited to:
+                <!-- <dl class="row">
+                        <dt class="col-sm-3">PROTECTIVE MAT COVERING THE BEAM</dt>
+                            <dd class="col-sm-9">make sure it is not moving around and is covering all of the edges</dd>
+                        <dt class="col-sm-3">ROUND SLING</dt>
+                            <dd class="col-sm-9">check it is evenly wrapped and not bunched</dd>
+                        <dt class="col-sm-3">RAPIDE</dt>
+                            <dd class="col-sm-9">ensure the gate is threaded down properly</dd>
+                        <dt class="col-sm-3">PULLEY SHACKLE</dt>
+                            <dd class="col-sm-9">check pin is threaded properly and moused with a red cable tie</dd>
+                        <dt class="col-sm-3">PULLEY SHEAVES</dt>
+                            <dd class="col-sm-9">ensure these are moving freely</dd>
+                        <dt class="col-sm-3">MAINLINE TERMINATION TO THE PULLEY BECKET</dt>
+                            <dd class="col-sm-9">check knot is tied correctly and secured</dd>
+                    </dl> -->
+                <ul>
+                  <li>
+                    <strong>PROTECTIVE MAT COVERING THE BEAM</strong> - make sure it is not moving
+                    around and is covering all of the edges
+                  </li>
+                  <li><strong>ROUND SLING</strong> - check it is evenly wrapped and not bunched</li>
+                  <li><strong>RAPIDE</strong> - ensure the gate is threaded down properly</li>
+                  <li>
+                    <strong>PULLEY SHACKLE</strong> - check pin is threaded properly and moused with
+                    a red cable tie
+                  </li>
+                  <li><strong>PULLEY SHEAVES</strong> - ensure these are moving freely</li>
+                  <li>
+                    <strong>MAINLINE TERMINATION TO THE PULLEY BECKET</strong> - check knot is tied
+                    correctly and secured
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+          <div id="connecting-load-path-aerial">
+            <h3>Connecting the Load Path - Aerial Venue</h3>
+            <ol>
+              <li>Disconnect wall attachment for desired rigging point.</li>
+              <li>Check any knots and ensure the attached swivel is moving freely.</li>
+              <li>Attach the pulley system to the swivel using a connector.</li>
+              <li>Have another rigger check all connections then attach a green tag.</li>
+              <li>
+                Hoist the point up to the desired height, then terminate to the wall attachment.
+              </li>
+              <li>Have another rigger double check all connections.</li>
+            </ol>
+          </div>
+          <div id="connecting-load-path-gravlocks">
+            <h3>Connecting the Load Path - Gravlocks</h3>
+            <ol>
+              <li>
+                Once the ladder is carefully secured against the steel beam, the top rigger is to
+                climb the ladder with the gravlocks and torque wrench, while the bottom rigger
+                secures the ladder.
+              </li>
+              <li>
+                The top rigger attaches gravlock clamp to one side of the flange, threading the bolt
+                down to appropriate torque. Match this on the other side with the other gravlock,
+                ensuring the openings are opposing and tighten with torque wrench.
+              </li>
+              <li>
+                The top rigger returns to the floor, collects the pipe and runner (nylon sling).
+              </li>
+              <li>
+                Fix the pipe between the two gravlock clamps, ensuring the clamps are lined up and
+                the pipe sits flush. Tighten the pipe clamps to appropriate torque.
+              </li>
+              <li>
+                Wrap the runner in a round turn and a choke ensuring the pipe is smooth and is not
+                in contact with the gravlock clamps (these are galvanized and the surface can be
+                abrasive).
+              </li>
+              <li>
+                The top rigger attaches a connector to the runner then attaches the pulley system to
+                the connector.
+              </li>
+              <li>
+                Once all hardware is attached, have a competent rigger double check all the
+                attachment points in the load path and attach a green tag.
+              </li>
+              <li>
+                It is the responsibility of the head rigger to ensure the load path is set up
+                correctly. This checklist includes - but is not limited to:
+                <ul>
+                  <li><strong>RUNNER</strong> - check it is evenly wrapped around the pipe</li>
+                  <li><strong>CONNECTOR</strong> - ensure the gate is closed properly</li>
+                  <li><strong>PULLEY SHEAVES</strong> - ensure these are moving freely</li>
+                  <li>
+                    <strong>MAINLINE TERMINATION TO THE PULLEY BECKET</strong> - check knot is tied
+                    correctly and secured
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+          <div id="cord-use">
+            <h3>Cord Use</h3>
+            <p>
+              <strong>SINGLE USE CORD</strong> - when selecting an appropriate cord for use with
+              body suspension, a safety factor of 10 needs to be employed. This safety factor takes
+              into account dynamic forces and unknown variables but not terminations. The MBS of the
+              cord needs to be derated by 50% to account for knots/terminations.
+            </p>
+
+            <!-- EXAMPLE 1: Cord with a mbs of 300 kgs (600 kg x 0.5 knots) has a swl of 30 kgs per line                
+                Weight of person / # of hooks = swl per line. there are two lines per hook (up and down - essentially basketing).                
+                80 kg (weight of person) / 4 hooks = 20 kg per hook / 2 lines (per hook) = 10 kg per working line (this means a cord with a minimum of 10 kg swl per line is required).
+                This means the 300 kg rope is suitable for this use.
+                
+                EXAMPLE 2: cord with a mbs of 175 kg (350 kg x 0.5 knots) has a swl of 17 kgs per line.
+                Weight of person / # of hooks = swl per line. there are two lines per hook (up and down - essentially basketing).
+                80kg (weight of person) / 2 hooks = 40kg per hook / 2 lines = 20kg per working line (this means a cord with a minimum of 20kg swl per line is required)
+                Thus, the 175 kg cord is not suitable for this use. -->
+
+            <div class="card text-bg-light mb-3" style="max-width: 40rem">
+              <div class="card-header"><strong>EXAMPLE 1</strong></div>
+              <div class="card-body">
+                <p class="card-text">
+                  Cord with a mbs of 300 kgs (600 kg x 0.5 knots) has a swl of 30 kgs per line
+                </p>
+                <p class="card-text">
+                  Weight of person / # of hooks = swl per line. there are two lines per hook (up and
+                  down - essentially basketing).
+                </p>
+                <p class="card-text">
+                  80 kg (weight of person) / 4 hooks = 20 kg per hook / 2 lines (per hook) = 10 kg
+                  per working line (this means a cord with a minimum of 10 kg swl per line is
+                  required).
+                </p>
+                <p class="card-text">
+                  This means the 300 kg rope <strong>is</strong> suitable for this use.
+                </p>
+              </div>
+            </div>
+
+            <div class="card text-bg-light mb-3" style="max-width: 40rem">
+              <div class="card-header"><strong>EXAMPLE 2</strong></div>
+              <div class="card-body">
+                <p class="card-text">
+                  Cord with a mbs of 175 kg (350 kg x 0.5 knots) has a swl of 17 kgs per line.
+                </p>
+                <p class="card-text">
+                  Weight of person / # of hooks = swl per line. there are two lines per hook (up and
+                  down - essentially basketing).
+                </p>
+                <p class="card-text">
+                  80kg (weight of person) / 2 hooks = 40kg per hook / 2 lines = 20kg per working
+                  line (this means a cord with a minimum of 20kg swl per line is required)
+                </p>
+                <p class="card-text">
+                  Thus, the 175 kg cord <strong>is</strong> not suitable for this use.
+                </p>
+              </div>
+            </div>
+
+            <p>Other factors that should be considered when selecting single use cord:</p>
+            <ul>
+              <li>What the cord is made from</li>
+              <li>How well it holds knots, bends & hitches</li>
+              <li>How well the cord cuts / melts</li>
+              <li>How much friction the cord creates through eyelets</li>
+              <li>How durable the cord is</li>
+            </ul>
+          </div>
+          <div id="terminations">
+            <h3>Terminations</h3>
+            <p>
+              There are many knots/hitches/bends that can be utilized for body suspension. Below are
+              the most commonly used ones. As a general rule, it is widely agreed that knots derate
+              rope by up to 50% - this should be factored in when choosing a cord.
+            </p>
+            <ul>
+              <li>
+                <a href="https://www.youtube.com/watch?v=Il3nCIfsrT0">FIGURE 8 FOLLOW THROUGH:</a>
+                This is one of the strongest terminations we use. Ideal for use on heavier dynamic
+                loads with less attachments. This knot can also be used to terminate to the becket
+                of the top block in a pulley system.
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=9ziGkUjmxVk">CLOVE HITCH:</a> Easily
+                adjustable, perfect for use when a lot of points are being used and tension needs to
+                be constantly adjusted. It is crucial however, that this kind of knot be backed up
+                to avoid slipping.
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=9glfeKvEuyo">DOUBLE FISHERMANS:</a> This
+                can be used to attach two open lengths together and also as a barrel knot.
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=7rw6n_Qm194">HALF HITCH:</a> This is
+                primarily used to lock hitches/bends in place.
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=G6RkzUhFq4k">ALPINE BUTTERFLY:</a> Used to
+                create an anchor on an existing line and can be loaded in multiple directions.
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=IOJmiuKjhl4">WATER KNOT:</a> Used to join
+                two ends together to create a continuous loop.
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=LveOF6QHhFw">MIDSHIPMAN’S HITCH:</a> Useful
+                hitch for adjusting lines under tension.
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=2Ssa22v4fxE"
+                  >ROUND TURN AND 2 HALF HITCHES:</a
+                >
+                Used generally only in static suspensions.
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=z51n_DyWEnQ">SCAFFOLD KNOT:</a> This is
+                used primarily to terminate to the pulley becket (an alternative to the figure 8
+                follow through)
+              </li>
+            </ul>
+            <p>
+              It is imperative a general rigger double checks all terminations prior to commencement
+              of the suspension.
+            </p>
+          </div>
+
+          <!-- 
+            <div class="container">
+                <!-- Button trigger modal 
+                <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-bs-target="#myModal">
+                  Play Video 1 - autoplay
+                </button>
+              
+                <!-- Modal 
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+              
+                      <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></span>
+                        </button>
+                        <!-- 16:9 aspect ratio 
+                        <div class="ratio ratio-16x9">
+                          <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
+                        </div>
+              
+                      </div>
+              
+                    </div>
+                  </div>
+                </div>
+              
+              </div> -->
+          <div id="hardware-selection">
+            <h3>Hardware Selection and Use</h3>
+            <p>
+              When selecting hardware for suspension, it is important to take into special
+              consideration its intended use and how it will work for your application. Certain
+              hardware is designed for specific uses. Understand how they are designed and ensure
+              their strength is suitable for your specific use. As a general rule of thumb - any
+              single connector in the load path should have a MBS of at least 1500 kgs (15kN).
+            </p>
+            <ol>
+              <li>
+                <strong>ROUND SLINGS:</strong> Round and synthetic generally - how it is used
+                affects the strength so make sure you read the label and derate accordingly.
+              </li>
+              <li>
+                <strong>CONNECTORS:</strong> Popular connector options are aluminium carabiners,
+                steel carabiners, maillon rapides and shackles.
+              </li>
+              <li>
+                <strong>PULLEYS:</strong> Many pulley systems are available. Marine styles are quite
+                popular due to their high strength to weight ratio as well as their durability.
+                Aluminium climbing pulleys are also a popular option as they too are lightweight and
+                designed specifically with live loads in mind.
+              </li>
+              <li>
+                <strong>MAINLINE ROPE:</strong> Different applications may require different rope
+                types. Commonly used are static or low-stretch ropes made from nylon or polyester.
+                Common sizes are 10mm / 11mm / 12mm.
+              </li>
+              <li>
+                <strong>SWIVELS:</strong> These need to be at least 24 kn - check also the intended
+                use of the swivel before purchasing.
+              </li>
+              <li>
+                <strong>RIG PLATES:</strong> Aluminium climbing plates are most suitable as these
+                are rated for human load, are lightweight and are well finished. Custom steel and
+                aluminium rigs can also be made to a suitable strength for human load.
+              </li>
+              <li>
+                <strong>CUSTOM FABRICATION:</strong> This is something that needs very careful
+                consideration. All custom fabrication needs to be engineered by a professional who
+                understands the intended use of the custom piece, therefore made in such a way to
+                withstand the forces imposed on it.
+              </li>
+              <li>
+                <strong>HOOKS:</strong> Different hooks are available for different uses. The style
+                of suspension will determine the desired hook type. Open gape hooks are primarily
+                for static/semi-static suspensions; semi-locking hooks for multi directional static
+                or dynamic loads; and locking hooks for dynamic loads.
+              </li>
+            </ol>
+          </div>
+          <div id="belay-ascent-descent">
+            <h3>Belay - Ascent / Descent</h3>
+            <ol>
+              <li>
+                The purpose of the belay (or in the case of body suspension, modified belay) is to
+                be able to raise and lower the suspendee in a safe and controlled manner.
+              </li>
+              <li>
+                The belayer should have an attachment point on their person, usually a well fitted
+                harness, fit for purpose. Alternatively, utilizing a fixed point may also be
+                appropriate (this is usually venue and situation dependent).
+              </li>
+              <li>
+                A suitable descent device should be used. Ensure the rigger/belay is trained in its
+                use.
+              </li>
+              <li>Riggers gloves should be worn to ensure hand safety.</li>
+              <li>
+                The belayer is to keep their attention on the suspendee throughout the whole
+                duration of the suspension.
+              </li>
+            </ol>
+          </div>
+          <div id="mainline">
+            <h3>Mainline</h3>
+            <ol>
+              <li>Care should always be taken with the mainline.</li>
+              <li>Follow the mainline inspection guide prior to use.</li>
+              <li>
+                Unravel the mainline in such a way that it is free from any kinks or unnecessary
+                twists.
+              </li>
+              <li>Never stand on the mainline at any time, this can damage the rope.</li>
+            </ol>
+          </div>
+          <div id="gear-inspection">
+            <h3>Gear Inspection</h3>
+            <p><strong>TO BE VISUALLY CARRIED OUT BEFORE, DURING AND AFTER USE.</strong></p>
+            <ol>
+              <li>
+                <strong>ROUND SLINGS</strong>
+                <ul>
+                  <li>
+                    Inspect for any damage, irregularities, or signs of wear and tear, specifically
+                    nicks & cuts. check the stitching also.
+                  </li>
+                  <li>Check to make sure the safety tag is readable and intact</li>
+                </ul>
+              </li>
+              <li>
+                <strong>MAILLON RAPIDES</strong>
+                <ul>
+                  <li>Ensure there are no deformities or irregularities</li>
+                  <li>Check there are no nicks and wear is less than 10%</li>
+                  <li>Ensure the gate threads smoothly</li>
+                </ul>
+              </li>
+              <li>
+                <strong>PULLEYS</strong>
+                <ul>
+                  <li>Check the sheaves are free moving</li>
+                  <li>Check the body is free from any deformities</li>
+                  <li>Check the swivel shackle head is moving freely</li>
+                  <li>Ensure the shackle is in working order</li>
+                  <li>Ensure the becket pin is secure</li>
+                </ul>
+              </li>
+              <li>
+                <strong>MAINLINE</strong>
+                <ul>
+                  <li>
+                    Rope should be inspected by passing through hands, meter by meter, feeling for
+                    any changes in the flex/shape.
+                  </li>
+                  <li>Check for any bunching of the sheath</li>
+                  <li>Check for any pulls in the sheath</li>
+                  <li>Ensure there are no cuts or abrasions</li>
+                  <li>Ensure the core is not exposed</li>
+                </ul>
+              </li>
+              <li>
+                <strong>CARABINERS</strong>
+                <ul>
+                  <li>The gate mechanism should operate freely</li>
+                  <li>The gate should close straight so that it cleanly engages</li>
+                  <li>
+                    The body of the carabiner should be free of any cracks, marks and deep scratches
+                  </li>
+                  <li>There should be no corrosion evident</li>
+                  <li>Locking mechanisms should operate freely</li>
+                  <li>Wear should be no more than 10%</li>
+                </ul>
+              </li>
+              <li>
+                <strong>SWIVELS</strong>
+                <ul>
+                  <li>Check all parts are moving and spinning freely</li>
+                  <li>Check for any cracks, deformation, wear and corrosion</li>
+                  <li>Ensure there are no unusual noises when spinning</li>
+                  <li>Check the axle screw has not loosened</li>
+                </ul>
+              </li>
+              <li>
+                <strong>RIG PLATES</strong>
+                <ul>
+                  <li>Check for any burrs, scratches and wear</li>
+                  <li>Eyelets should be free from any nicks that may damage cord</li>
+                  <li>Ensure there is no deformation of the plate</li>
+                  <li>Wear on the anchor points should be no more than 10%</li>
+                </ul>
+              </li>
+              <li>
+                <strong>BELAY / DESCENT DEVICES</strong>
+                <ul>
+                  <li>These can be prone to excessive wear given the friction from rope</li>
+                  <li>Ensure the device is functioning properly</li>
+                  <li>Check the rope surface is free from any nicks, burrs or abrasions</li>
+                </ul>
+              </li>
+              <li>
+                <strong>SHACKLES</strong>
+                <ul>
+                  <li>Check for wear on the surface</li>
+                  <li>Check the pin is still straight and threads into the body freely</li>
+                  <li>Check there are no signs of the body opening</li>
+                  <li>Ensure the pin is well seated</li>
+                </ul>
+              </li>
+              <li>
+                <strong>HOOKS</strong>
+                <ul>
+                  <li>Ensure hooks are not deformed in any way</li>
+                  <li>Check hooks for any signs of damage</li>
+                  <li>Locking hook parts should all still align and bolts should thread freely</li>
+                </ul>
+              </li>
+              <li>
+                <strong>HARNESSES</strong>
+                <ul>
+                  <li>
+                    Check all stitching, buckles and attachments for any sign of damage or wear
+                  </li>
+                  <li>Ensure harness webbing is dressed and not twisted</li>
+                </ul>
+              </li>
+              <li>
+                <strong>HELMETS</strong>
+                <ul>
+                  <li>Inspect the helmet for any cracks or deformations</li>
+                  <li>Ensure the straps are not twisted and the clip is working properly</li>
+                  <li>Check any stitching to ensure there is no wear or damage</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+          <div id="general-rigging-guidelines">
+            <h3>General Rigging Guidelines</h3>
+            <ol>
+              <li>All cord is single use and disposable.</li>
+              <li>
+                Inverted suspensions are to be fitted with a harness with a reusable mainline
+                attached or alternatively, a crash mat can be used.
+              </li>
+              <li>All knots and connections are to be double checked by another rigger.</li>
+              <li>
+                A visual check of all hardware should be carried out before and after each use.
+              </li>
+              <li>
+                Full hardware inspections are to be carried out and recorded at least every 12
+                months.
+              </li>
+              <li>
+                Only approved people are allowed to change, add or remove equipment and/or apparatus
+                at our events/workshops. These people may not appoint another person to change,
+                adjust or modify any piece of rigging gear unless competent to do so.
+              </li>
+              <li>
+                An approved person may allow a volunteer to clip gear onto the eyelet end of the
+                pulleys however you must double check their work.
+              </li>
+              <li>
+                Wherever possible when you have attached anything onto the pulley, get another
+                person to double check your work.
+              </li>
+              <li>
+                Only trained riggers may modify, move, adjust any rigging that directly connects to
+                the structure.
+              </li>
+              <li>You must wear a climbing helmet at all times when working at height.</li>
+            </ol>
+          </div>
+          <div id="sources-credits">
+            <h3>Sources / Credits</h3>
+            <ul>
+              <li>ANSI 1.43 - Entertainment Technology - Performer Flying Systems</li>
+              <li>Safe Rigging Practices for the Entertainment Industry in New Zealand</li>
+              <li>Circus Safe New Zealand</li>
+              <li>Physics for roping technicians 2020 - Richard Delaney</li>
+              <li>Nick Creech</li>
+              <li>Scott Edmonds</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
