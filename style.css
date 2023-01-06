@@ -1,3 +1,7 @@
+h1,.h1 {
+    color: #b45f06;
+    text-transform: uppercase;
+}
 h2 {
     color: #b45f06;
     text-transform: uppercase;
@@ -21,17 +25,35 @@ h6 {
     font-style: italic;
 }
 
-.modal-dialog {
-    max-width: 800px;
-    margin: 30px auto;
+header .nav-item {
+    text-transform: uppercase;
+    font-family: interface, sans-serif;
+    font-style: normal;
+    font-weight: 100;
 }
 
-.modal-body {
-position:relative;
-padding:0px;
+header .navbar-brand {
+    text-transform: uppercase;    
+    font-family: alternate-gothic-no-1-d, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
-.btn-close {
-position:absolute;
-right:-30px;
-top:0;
+
+header .brand-logo {
+    max-height: 6rem;
+}
+
+html,body {
+    overflow: hidden;
+}
+
+#navbar-example3 {
+    overflow-y: auto;
+    height: calc(100vh - 120px);
+    text-transform: uppercase;
+}
+
+#scrollable-content {
+    height: calc(100vh - 120px);
+    overflow-y: scroll;
 }

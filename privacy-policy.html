@@ -1,10 +1,5 @@
 <html>
   <head>
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"></script>
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -14,15 +9,21 @@
     <link rel="stylesheet" href="style.css" />
     <title>Privacy Policy - Immersive Environments</title>
   </head>
-
   <body>
-    <script src="youtube-modal.js"></script>
-
-    <nav class="navbar navbar-expand-md bg-light navbar-light">
+    <!-- JavaScript Bundle with Popper -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+    <header>
+      <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-          <a href="#" class="navbar-brand"
-            >Immersive Environments
-            <!-- <img src="images/Dodecahedron+no+background.png" class="img-fluid " alt="IE Logo"> -->
+          <a href="#" class="navbar-brand">
+            <img
+              src="images/Dodecahedron+no+background.png"
+              alt="IE Logo"
+              class="d-inline-block align-text-center brand-logo" />
+            Immersive Environments
           </a>
           <button
             class="navbar-toggler"
@@ -32,7 +33,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navmenu">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto nav-justified">
               <li class="nav-item">
                 <a href="health-safety-manual.html" class="nav-link">Health and Safety</a>
               </li>
@@ -43,54 +44,55 @@
                 <a href="rigging-protocol.html" class="nav-link">Rigging</a>
               </li>
               <li class="nav-item">
-                  <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
-                </li>
-                <li class="nav-item">
-                  <a href="covid-policy.html" class="nav-link">COVID-19</a>
-                </li>
+                <a href="privacy-policy.html" class="nav-link active" aria-current="page">Privacy Policy</a>
+              </li>
+              <li class="nav-item">
+                <a href="covid-policy.html" class="nav-link">COVID-19</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
+    </header>
 
     <div class="row">
-      <div class="col-4">
-        <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+      <div class="col-3">
+        <nav id="navbar-example3" class="flex-column align-items-stretch ps-3 pe-3 border-end">
           <nav class="nav nav-pills flex-column">
-            <a class="nav-link" href="#introduction">Introduction</a>
-            <a class="nav-link" href="#changes-to-this-policy">Changes to This Policy</a>
-            <a class="nav-link" href="#who-do-we-collect-your-personal-information-from"
+            <a class="nav-link mb-1" href="#introduction">Introduction</a>
+            <a class="nav-link mb-1" href="#changes-to-this-policy">Changes to This Policy</a>
+            <a class="nav-link mb-1" href="#who-do-we-collect-your-personal-information-from"
               >Who Do We Collect Your Personal Information From</a
             >
-            <a class="nav-link" href="#how-we-use-your-personal-information"
+            <a class="nav-link mb-1" href="#how-we-use-your-personal-information"
               >How We Use Your Personal Information</a
             >
-            <a class="nav-link" href="#disclosing-your-personal-information"
+            <a class="nav-link mb-1" href="#disclosing-your-personal-information"
               >Disclosing Your Personal Information</a
             >
-            <a class="nav-link" href="#protecting-and-storing-your-personal-information"
+            <a class="nav-link mb-1" href="#protecting-and-storing-your-personal-information"
               >Protecting and Storing Your Personal Information</a
             >
-            <a class="nav-link" href="#accessing-and-correcting-your-personal-information"
+            <a class="nav-link mb-1" href="#accessing-and-correcting-your-personal-information"
               >Accessing and Correcting Your Personal Information</a
             >
-            <a class="nav-link" href="#internet-use">Internet Use</a>
-            <a class="nav-link" href="#cookies">Cookies</a>
-            <a class="nav-link" href="#photography">Photography</a>
-            <a class="nav-link" href="#contacting-us">Contacting Us</a>
+            <a class="nav-link mb-1" href="#internet-use">Internet Use</a>
+            <a class="nav-link mb-1" href="#cookies">Cookies</a>
+            <a class="nav-link mb-1" href="#photography">Photography</a>
+            <a class="nav-link mb-1" href="#contacting-us">Contacting Us</a>
           </nav>
         </nav>
       </div>
 
-      <div class="col-8">
+      <div class="col-9">
         <div
+          id="scrollable-content"
           data-bs-spy="scroll"
           data-bs-target="#navbar-example3"
           data-bs-smooth-scroll="true"
-          class="scrollspy-example-2"
           tabindex="0">
           <div>
-            <h2>Privacy Policy</h2>
+            <h1 class="h1">Privacy Policy</h1>
           </div>
 
           <div id="introduction">

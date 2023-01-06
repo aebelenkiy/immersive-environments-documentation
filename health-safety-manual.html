@@ -1,10 +1,5 @@
 <html>
   <head>
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"></script>
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -14,47 +9,55 @@
     <link rel="stylesheet" href="style.css" />
     <title>Health and Safety Manual - Immersive Environments</title>
   </head>
-
   <body>
-    
-    <nav class="navbar navbar-expand-md bg-light navbar-light">
-      <div class="container">
-        <a href="#" class="navbar-brand"
-          >Immersive Environments
-          <!-- <img src="images/Dodecahedron+no+background.png" class="img-fluid " alt="IE Logo"> -->
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navmenu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a href="health-safety-manual.html" class="nav-link">Health and Safety</a>
-            </li>
-            <li class="nav-item">
-              <a href="infection-control-protocol.html" class="nav-link">Infection Control</a>
-            </li>
-            <li class="nav-item">
-              <a href="rigging-protocol.html" class="nav-link">Rigging</a>
-            </li>
-            <li class="nav-item">
+    <!-- JavaScript Bundle with Popper -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+    <header>
+      <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <img
+              src="images/Dodecahedron+no+background.png"
+              alt="IE Logo"
+              class="d-inline-block align-text-center brand-logo" />
+            Immersive Environments
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto nav-justified">
+              <li class="nav-item">
+                <a href="health-safety-manual.html" class="nav-link active" aria-current="page">Health and Safety</a>
+              </li>
+              <li class="nav-item">
+                <a href="infection-control-protocol.html" class="nav-link">Infection Control</a>
+              </li>
+              <li class="nav-item">
+                <a href="rigging-protocol.html" class="nav-link">Rigging</a>
+              </li>
+              <li class="nav-item">
                 <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
               </li>
               <li class="nav-item">
                 <a href="covid-policy.html" class="nav-link">COVID-19</a>
               </li>
-          </ul>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <div class="row">
-      <div class="col-4">
-        <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+      <div class="col-3">
+        <nav id="navbar-example3" class="flex-column align-items-stretch ps-3 pe-3 border-end">
           <nav class="nav nav-pills flex-column">
             <a class="nav-link" href="#manual-overview">Manual Overview</a>
             <nav class="nav nav-pills flex-column">
@@ -92,16 +95,15 @@
           </nav>
         </nav>
       </div>
-
-      <div class="col-8">
+      <div class="col-9">
         <div
+          id="scrollable-content"
           data-bs-spy="scroll"
           data-bs-target="#navbar-example3"
           data-bs-smooth-scroll="true"
-          class="scrollspy-example-2"
           tabindex="0">
           <div>
-            <h2>Health and Safety Manual</h2>
+            <h1>Health and Safety Manual</h1>
           </div>
           <div id="manual-overview">
             <h3>Manual Overview</h3>
